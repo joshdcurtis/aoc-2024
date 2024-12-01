@@ -11,7 +11,7 @@ fi
 n=$1
 
 # Define the script path
-script_path="./src/${n}/${n}.py"
+script_path="./src/${n}.py"
 
 # Define the input file path
 input_path="./inputs/${n}.txt"
