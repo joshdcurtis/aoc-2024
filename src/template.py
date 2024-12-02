@@ -2,6 +2,8 @@ import sys
 
 # sys.argv[0] is the script name itself
 # sys.argv[1] would be the first argument (in this case, the input file path)
+def solution(input: str) -> tuple[str, str]:
+    return "", ""
 
 def main():
     # Check if an argument was passed
@@ -16,8 +18,9 @@ def main():
     try:
         with open(input_file_path, 'r') as file:
             content = file.read()
-            print(f"Input file path: {input_file_path}")
-            print(f"File contents: {content}")
+            results = solution(content)
+            for result in results:
+                print(result)
     except FileNotFoundError:
         print(f"Error: File {input_file_path} not found")
     except Exception as e:
